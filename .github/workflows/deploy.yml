@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Ou "master" selon le nom de ta branche principale
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -16,18 +16,25 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # AJOUT IMPORTANT : Définit le dossier de travail par défaut
+    defaults:
+      run:
+        working-directory: ./mon-portefolio
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+          # Correction des chemins pour chercher dans le sous-dossier
+          if [ -f "${{ github.workspace }}/mon-portefolio/yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
             exit 0
-          elif [ -f "${{ github.workspace }}/package.json" ]; then
+          elif [ -f "${{ github.workspace }}/mon-portefolio/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
@@ -36,31 +43,41 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+          # Important : cache le dossier node_modules du sous-dossier
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+          cache-dependency-path: ./mon-portefolio/package-lock.json
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
+
       - name: Restore cache
         uses: actions/cache@v4
         with:
           path: |
-            .next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+            mon-portefolio/.next/cache
+          # Clé de cache mise à jour pour inclure le sous-dossier dans le hash
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('mon-portefolio/package-lock.json', 'mon-portefolio/yarn.lock') }}-${{ hashFiles('mon-portefolio/**.[jt]s', 'mon-portefolio/**.[jt]sx') }}
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+            ${{ runner.os }}-nextjs-${{ hashFiles('mon-portefolio/package-lock.json', 'mon-portefolio/yarn.lock') }}-
+
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          # AJOUT IMPORTANT : Indique où se trouve le dossier 'out' après le build
+          path: ./mon-portefolio/out
 
   deploy:
     environment:
