@@ -124,13 +124,12 @@ export const downloadableDocs: Document[] = [
   {
     name: "CV - Sylvain HUANG",
     description: "Format PDF, complet et imprimable.",
-    fileUrl: "/Huang sylvain-4.pdf", // Le fichier que tu as uploadé
-    icon: FileText
+    fileUrl: "/PorteFolio/Huang sylvain-4.pdf",    icon: FileText
   },
   {
     name: "Dossier TP Odoo",
     description: "Exemple de rapport technique.",
-    fileUrl: "/TP Odoo.pdf", // Ton autre fichier
+    fileUrl: "/PorteFolio/TP Odoo.pdf", // Ton autre fichier
     icon: FileText
   }
 ];
