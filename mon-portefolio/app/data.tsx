@@ -53,8 +53,8 @@ export const projects: Project[] = [
     description: "Architecture FullStack avec CI/CD complète. Automatisation des tests et contrôle qualité.",
     technologies: ["Java Spring Boot", "React.js", "GitHub Actions", "SonarQube", "JUnit/Vitest"],
     imageUrl: "/api/placeholder/600/400",
-    repoUrl: "https://github.com/ton-pseudo/repo-projet",
-    reportUrl: "/documents/rapport-devops.pdf" // Exemple de lien PDF
+    repoUrl: "https://github.com/uciie/DevOps1_EDT_Intelligent",
+    reportUrl: "/documents/rapport-devops.pdf" 
   },
   {
     id: 2,
@@ -68,6 +68,7 @@ export const projects: Project[] = [
     title: "Recherche de Tables Similaires",
     description: "Site web interactif pour la recherche de données similaires avec analyse graphique.",
     technologies: ["Python", "Flask", "Pandas", "Data Science"],
+    repoUrl: "https://github.com/Kusanagies/ProjetStage",
     imageUrl: "/api/placeholder/600/400",
   }
 ];
@@ -124,18 +125,18 @@ export const downloadableDocs: Document[] = [
   {
     name: "CV - Sylvain HUANG",
     description: "Format PDF, complet et imprimable.",
-    fileUrl: "/PorteFolio/Huang sylvain-4.pdf",    icon: FileText
+    fileUrl: "/PorteFolio/CV_Sylvain_Huang.pdf",    icon: FileText
   },
   {
     name: "Dossier TP Odoo",
     description: "Exemple de rapport technique.",
-    fileUrl: "/PorteFolio/TP Odoo.pdf", // Ton autre fichier
+    fileUrl: "/PorteFolio/TP Odoo.pdf",
     icon: FileText
   }
 ];
 
 export const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/kusanagies", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/sylvain-huang-48705b208/", label: "LinkedIn" },
   { icon: Mail, href: `mailto:${personalInfo.email}`, label: "Email" },
 ];
