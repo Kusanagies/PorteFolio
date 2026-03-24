@@ -140,3 +140,38 @@ export const socialLinks = [
   { icon: Linkedin, href: "https://www.linkedin.com/in/sylvain-huang-48705b208/", label: "LinkedIn" },
   { icon: Mail, href: `mailto:${personalInfo.email}`, label: "Email" },
 ];
+
+export const courseFiles = [
+  { 
+    name: "1- Fiche cours V_E", 
+    fileUrl: "/PorteFolio/1- fiche cours V_E.odt" 
+  },
+  { 
+    name: "2- Pourquoi Étudier le funnel marketing", 
+    fileUrl: "/PorteFolio/2- Pourquoi Étudier le funnel marketing V_E.odt" 
+  },
+  { 
+    name: "3- Création de funnel marketing", 
+    fileUrl: "/PorteFolio/3- création de funnel marketing.docx" 
+  },
+  { 
+    name: "4- Les indicateurs KPI", 
+    fileUrl: "/PorteFolio/4_ Les indicateurs KPI V_E.odt" 
+  },
+  { 
+    name: "5- Étude de cas KPI", 
+    fileUrl: "/PorteFolio/5- Étude de cas KPI.odt" 
+  },
+  { 
+    name: "6- TD + QCM pour étudiants", 
+    fileUrl: "/PorteFolio/6- Td + QCM pour étudiants.odt" 
+  },
+  { 
+    name: "7- Sujet blanc", 
+    fileUrl: "/PorteFolio/7- sujet blanc.odt" 
+  },
+  { 
+    name: "TP KPI", 
+    fileUrl: "/PorteFolio/tp KPI V_E.ods" 
+  }
+];
