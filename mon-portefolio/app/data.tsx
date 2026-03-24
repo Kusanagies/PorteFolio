@@ -10,7 +10,8 @@ export interface Project {
   technologies: string[];
   imageUrl: string; // On gardera des placeholders pour l'instant
   repoUrl?: string;
-  reportUrl?: string; // Nouveau champ pour télécharger le rapport PDF du projet
+  reportUrl?: string; 
+  liveUrl?: string;
 }
 
 export interface Skill {
@@ -70,6 +71,14 @@ export const projects: Project[] = [
     technologies: ["Python", "Flask", "Pandas", "Data Science"],
     repoUrl: "https://github.com/Kusanagies/ProjetStage",
     imageUrl: "/api/placeholder/600/400",
+  },
+  {
+    id: 4,
+    title: "CRM SaaS (Front-End)",
+    description: "Interface d'une application de gestion de relation client (CRM) conçue pour un modèle SaaS.",
+    technologies: ["Python", "Django", "Tailwind CSS"], 
+    imageUrl: "/api/placeholder/600/400",
+    liveUrl: "https://projetcrmfront.vercel.app/"
   }
 ];
 
@@ -77,9 +86,9 @@ export const skills: Skill[] = [
   { name: "Java / Spring", category: "Backend", level: 85 },
   { name: "Python / Django / Flask", category: "Backend", level: 90 },
   { name: "React.js / Next.js", category: "Frontend", level: 80 },
-  { name: "SQL (MySQL, Oracle)", category: "Data", level: 85 },
+  { name: "SQL (MySQL, Oracle)", category: "Data", level: 90 },
   { name: "DevOps (CI/CD, Docker)", category: "DevOps", level: 75 },
-  { name: "Linux / Bash", category: "DevOps", level: 80 },
+  { name: "Linux / Bash", category: "DevOps", level: 90 },
 ];
 
 export const timeline: ExperienceItem[] = [
