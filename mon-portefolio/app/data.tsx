@@ -55,13 +55,14 @@ export const projects: Project[] = [
     technologies: ["Java Spring Boot", "React.js", "GitHub Actions", "SonarQube", "JUnit/Vitest"],
     imageUrl: "/api/placeholder/600/400",
     repoUrl: "https://github.com/uciie/DevOps1_EDT_Intelligent",
-    reportUrl: "/documents/rapport-devops.pdf" 
+    reportUrl: "/PorteFolio/rapport-devops.pdf" 
   },
   {
     id: 2,
     title: "Visualisation d'Algorithmes de Tri",
     description: "Application web interactive comparant différents algorithmes de tri en temps réel.",
     technologies: ["Python", "Flask", "C", "HTML/CSS"],
+    repoUrl:"https://github.com/Kusanagies/ProjetInformatiqueL2S1"
     imageUrl: "/api/placeholder/600/400",
   },
   {
@@ -78,7 +79,8 @@ export const projects: Project[] = [
     description: "Interface d'une application de gestion de relation client (CRM) conçue pour un modèle SaaS.",
     technologies: ["Python", "Django", "Tailwind CSS"], 
     imageUrl: "/api/placeholder/600/400",
-    liveUrl: "https://projetcrmfront.vercel.app/"
+    liveUrl: "https://projetcrmfront.vercel.app/",
+    reportUrl:"/PorteFolio/RapportCRM.pdf"
   }
 ];
 
@@ -135,13 +137,8 @@ export const downloadableDocs: Document[] = [
     name: "CV - Sylvain HUANG",
     description: "Format PDF, complet et imprimable.",
     fileUrl: "/PorteFolio/CV_Sylvain_Huang.pdf",    icon: FileText
-  },
-  {
-    name: "Dossier TP Odoo",
-    description: "Exemple de rapport technique.",
-    fileUrl: "/PorteFolio/TP Odoo.pdf",
-    icon: FileText
   }
+  
 ];
 
 export const socialLinks = [
@@ -182,5 +179,9 @@ export const courseFiles = [
   { 
     name: "TP KPI", 
     fileUrl: "/PorteFolio/tp KPI V_E.ods" 
+  },
+  {
+    name:"TP ODOO",
+    fileUrl:"/PorteFolio/TP_Odoo.pdf"
   }
 ];
