@@ -62,8 +62,8 @@ export const projects: Project[] = [
     title: "Visualisation d'Algorithmes de Tri",
     description: "Application web interactive comparant différents algorithmes de tri en temps réel.",
     technologies: ["Python", "Flask", "C", "HTML/CSS"],
-    repoUrl:"https://github.com/Kusanagies/ProjetInformatiqueL2S1"
-    imageUrl: "/api/placeholder/600/400",
+    repoUrl:"https://github.com/Kusanagies/ProjetInformatiqueL2S1",
+    imageUrl: "/api/placeholder/600/400"
   },
   {
     id: 3,
