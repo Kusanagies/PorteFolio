@@ -189,7 +189,7 @@ export const certifications: Document[] = [
   {
     name: "Certification ANSSI x Club EBIOS",
     description: "Test final et attestation de réussite sur la gestion des risques cyber (EBIOS).",
-    fileUrl: "/documents/Test_final___ANSSI_x_Club_EBIOS_29-03-2026-1.pdf",
+    fileUrl: "/PorteFolio/documents/Test_final___ANSSI_x_Club_EBIOS_29-03-2026-1.pdf",
     icon: FileText
   },
   {
