@@ -185,3 +185,23 @@ export const courseFiles = [
     fileUrl:"/PorteFolio/TP_Odoo.pdf"
   }
 ];
+export const certifications: Document[] = [
+  {
+    name: "Certification ANSSI x Club EBIOS",
+    description: "Test final et attestation de réussite sur la gestion des risques cyber (EBIOS).",
+    fileUrl: "/PorteFolio/Test_final___ANSSI_x_Club_EBIOS_29-03-2026-1.pdf",
+    icon: FileText
+  },
+  {
+    name: "Certifications de marketing digital Hubspot",
+    description: "Badge visuel confirmant l'obtention de la certification.",
+    fileUrl: "/PorteFolio/23cfe5993d074642956191dbc000b0a4.png",
+    icon: FileText
+  },
+  {
+    name: "Document complémentaire",
+    description: "QUIZ : Machine Learning Fundamentals",
+    fileUrl: "/PorteFolio/document.pdf",
+    icon: FileText
+  }
+];

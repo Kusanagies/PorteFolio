@@ -4,6 +4,7 @@ import Hero from "@/app/components/hero";
 import Projects from "@/app/components/projects";
 import Timeline from "@/app/components/Timeline";
 import Downloads from "@/app/components/Downloads";
+import Certifications from "./components/Certifications";
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
         <Projects />
         
         <Downloads />
+        
+        <Certifications />
         
         <section id="contact" className="py-20 bg-gray-50 text-center px-4">
           <div className="max-w-4xl mx-auto">
