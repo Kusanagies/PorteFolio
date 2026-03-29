@@ -55,7 +55,7 @@ export const projects: Project[] = [
     technologies: ["Java Spring Boot", "React.js", "GitHub Actions", "SonarQube", "JUnit/Vitest"],
     imageUrl: "/api/placeholder/600/400",
     repoUrl: "https://github.com/uciie/DevOps1_EDT_Intelligent",
-    reportUrl: "/PorteFolio/rapport-devops.pdf" 
+    reportUrl: "/documents/rapport-devops.pdf" 
   },
   {
     id: 2,
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     technologies: ["Python", "Django", "Tailwind CSS"], 
     imageUrl: "/api/placeholder/600/400",
     liveUrl: "https://projetcrmfront.vercel.app/",
-    reportUrl:"/PorteFolio/RapportCRM.pdf"
+    reportUrl:"/documents/RapportCRM.pdf"
   }
 ];
 
@@ -136,7 +136,7 @@ export const downloadableDocs: Document[] = [
   {
     name: "CV - Sylvain HUANG",
     description: "Format PDF, complet et imprimable.",
-    fileUrl: "/PorteFolio/CV_Sylvain_Huang.pdf",    icon: FileText
+    fileUrl: "/documents/CV_Sylvain_Huang.pdf",    icon: FileText
   }
   
 ];
@@ -150,58 +150,58 @@ export const socialLinks = [
 export const courseFiles = [
   { 
     name: "1- Fiche cours V_E", 
-    fileUrl: "/PorteFolio/1- fiche cours V_E.odt" 
+    fileUrl: "/documents/1- fiche cours V_E.odt" 
   },
   { 
     name: "2- Pourquoi Étudier le funnel marketing", 
-    fileUrl: "/PorteFolio/2- Pourquoi Étudier le funnel marketing V_E.odt" 
+    fileUrl: "/documents/2- Pourquoi Étudier le funnel marketing V_E.odt" 
   },
   { 
     name: "3- Création de funnel marketing", 
-    fileUrl: "/PorteFolio/3- création de funnel marketing.docx" 
+    fileUrl: "/documents/3- création de funnel marketing.docx" 
   },
   { 
     name: "4- Les indicateurs KPI", 
-    fileUrl: "/PorteFolio/4_ Les indicateurs KPI V_E.odt" 
+    fileUrl: "/documents/4_ Les indicateurs KPI V_E.odt" 
   },
   { 
     name: "5- Étude de cas KPI", 
-    fileUrl: "/PorteFolio/5- Étude de cas KPI.odt" 
+    fileUrl: "/documents/5- Étude de cas KPI.odt" 
   },
   { 
     name: "6- TD + QCM pour étudiants", 
-    fileUrl: "/PorteFolio/6- Td + QCM pour étudiants.odt" 
+    fileUrl: "/documents/6- Td + QCM pour étudiants.odt" 
   },
   { 
     name: "7- Sujet blanc", 
-    fileUrl: "/PorteFolio/7- sujet blanc.odt" 
+    fileUrl: "/documents/7- sujet blanc.odt" 
   },
   { 
     name: "TP KPI", 
-    fileUrl: "/PorteFolio/tp KPI V_E.ods" 
+    fileUrl: "/documents/tp KPI V_E.ods" 
   },
   {
     name:"TP ODOO",
-    fileUrl:"/PorteFolio/TP_Odoo.pdf"
+    fileUrl:"/documents/TP_Odoo.pdf"
   }
 ];
 export const certifications: Document[] = [
   {
     name: "Certification ANSSI x Club EBIOS",
     description: "Test final et attestation de réussite sur la gestion des risques cyber (EBIOS).",
-    fileUrl: "/PorteFolio/Test_final___ANSSI_x_Club_EBIOS_29-03-2026-1.pdf",
+    fileUrl: "/documents/Test_final___ANSSI_x_Club_EBIOS_29-03-2026-1.pdf",
     icon: FileText
   },
   {
     name: "Certifications de marketing digital Hubspot",
     description: "Badge visuel confirmant l'obtention de la certification.",
-    fileUrl: "/PorteFolio/23cfe5993d074642956191dbc000b0a4.png",
+    fileUrl: "/documents/23cfe5993d074642956191dbc000b0a4.png",
     icon: FileText
   },
   {
     name: "Document complémentaire",
     description: "QUIZ : Machine Learning Fundamentals",
-    fileUrl: "/PorteFolio/document.pdf",
+    fileUrl: "/documents/document.pdf",
     icon: FileText
   }
 ];
